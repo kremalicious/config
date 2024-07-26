@@ -4,7 +4,8 @@
   "description": "Shared configuration files",
   "type": "module",
   "exports": {
-    "./biome": "./biome.json"
+    "./biome": "./biome.json",
+    "./prettier": "./prettier.json"
   },
   "author": "Matthias Kretschmann <m@kretschmann.io>",
   "license": "MIT",
