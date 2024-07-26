@@ -1,0 +1,14 @@
+{
+  "name": "@kremalicious/config",
+  "version": "1.0.0",
+  "description": "Shared configuration files",
+  "type": "module",
+  "exports": {
+    "./biome": "./biome.json"
+  },
+  "author": "Matthias Kretschmann <m@kretschmann.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3"
+  }
+}
