@@ -1,51 +1,29 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "complexity": {
-        "noExcessiveCognitiveComplexity": "error",
-        "noExcessiveNestedTestSuites": "error",
-        "noUselessUndefinedInitialization": "error",
-        "noUselessStringConcat": "error"
-      },
-      "correctness": {
-        "noUnusedImports": "error",
-        "noUnusedVariables": "error",
-        "useArrayLiterals": "error",
-        "useHookAtTopLevel": "error"
-      },
-      "style": {
-        "useFragmentSyntax": "error",
-        "useNamingConvention": "error",
-        "useThrowNewError": "error"
-      }
+    "domains": {
+      "test": "all",
+      "react": "recommended",
+      "next": "recommended",
+      "solid": "none"
     }
   },
   "formatter": {
-    "enabled": true,
-    "useEditorconfig": true,
-    "indentStyle": "space",
-    "indentWidth": 2
+    "indentStyle": "space"
   },
   "javascript": {
     "formatter": {
-      "jsxQuoteStyle": "double",
-      "quoteProperties": "asNeeded",
       "trailingCommas": "none",
       "semicolons": "asNeeded",
-      "arrowParentheses": "always",
-      "bracketSpacing": true,
-      "bracketSameLine": false,
-      "quoteStyle": "single",
-      "attributePosition": "auto"
+      "quoteStyle": "single"
     }
   },
   "css": {
-    "linter": { "enabled": true },
     "formatter": { "enabled": true, "quoteStyle": "single" },
     "parser": { "cssModules": true }
+  },
+  "html": {
+    "formatter": { "enabled": true }
   },
   "vcs": {
     "enabled": true,
@@ -54,12 +32,10 @@
   },
   "overrides": [
     {
-      "include": ["*.astro"],
+      "includes": ["**/*.astro"],
       "linter": {
         "rules": {
-          "style": {
-            "useConst": "off"
-          },
+          "style": { "useConst": "off" },
           "correctness": {
             "noUnusedImports": "off",
             "noUnusedVariables": "off"
