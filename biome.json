@@ -23,9 +23,7 @@
     "parser": { "cssModules": true }
   },
   "html": {
-    "formatter": {
-      "enabled": true
-    }
+    "formatter": { "enabled": true }
   },
   "vcs": {
     "enabled": true,
@@ -37,9 +35,7 @@
       "includes": ["**/*.astro"],
       "linter": {
         "rules": {
-          "style": {
-            "useConst": "off"
-          },
+          "style": { "useConst": "off" },
           "correctness": {
             "noUnusedImports": "off",
             "noUnusedVariables": "off"
