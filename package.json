@@ -7,6 +7,14 @@
     "./biome": "./biome.json",
     "./prettier": "./prettier.js"
   },
+  "files": [
+    "biome.json",
+    "prettier.js",
+    "prettier.d.ts",
+    "package.json",
+    "README.md"
+  ],
+  "types": "./prettier.d.ts",
   "author": "Matthias Kretschmann <m@kretschmann.io>",
   "license": "MIT",
   "scripts": {
