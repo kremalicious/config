@@ -5,7 +5,7 @@
   "type": "module",
   "exports": {
     "./biome": "./biome.json",
-    "./prettier": "./prettier.json"
+    "./prettier": "./prettier.js"
   },
   "author": "Matthias Kretschmann <m@kretschmann.io>",
   "license": "MIT",
@@ -13,8 +13,12 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.6",
-    "release-it": "19.0.3"
+    "@biomejs/biome": "2.2.5",
+    "release-it": "19.0.5"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": ">=2.0.0",
+    "prettier": ">=3.0.0"
   },
   "release-it": {
     "git": {

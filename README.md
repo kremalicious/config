@@ -19,11 +19,16 @@ npm i -D @kremalicious/config
 
 See https://biomejs.dev/guides/configure-biome/#share-a-configuration-file
 
-### Prettier (deprecated, use Biome instead)
+### Prettier
 
-```json
-// .prettierrc
-"@kremalicious/config/prettier"
+```mjs
+// .prettierrc.mjs
+import sharedConfig from "@kremalicious/config/prettier"
+
+/** @type {import("prettier").Config} */
+export default {
+  ...sharedConfig
+}
 ```
 
 See https://prettier.io/docs/en/configuration#sharing-configurations
